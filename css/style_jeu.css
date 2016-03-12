@@ -25,6 +25,8 @@ td {
 
 .gros{
     background-color: #3C9;
+    width: 50px;
+    height: 50px;
 }
 
 .petit{
@@ -35,12 +37,10 @@ td {
 
 .joueur1{
     background-color: #F00;
-    height: 5px;
-    width: 5px;
+    
 }
 
 .joueur2{
     background-color: #0F0;
-    height: 5px;
-    width: 5px;
+    
 }
