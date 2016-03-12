@@ -1,0 +1,46 @@
+h1 {
+    color:red;
+}
+
+table {
+    /*border-collapse:collapse;*/
+    border: 2px solid black;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    background-color: #EEE;
+}
+
+.largeur{
+    
+    height: 5px;
+}
+
+.hauteur{
+    
+    width : 5px;
+}
+
+.gros{
+    background-color: #3C9;
+}
+
+.petit{
+    background-color: #000;
+    height: 5px;
+    width: 5px;
+}
+
+.joueur1{
+    background-color: #F00;
+    height: 5px;
+    width: 5px;
+}
+
+.joueur2{
+    background-color: #0F0;
+    height: 5px;
+    width: 5px;
+}
