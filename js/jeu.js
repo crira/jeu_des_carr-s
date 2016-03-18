@@ -1,12 +1,18 @@
 window.onload  = function () {
     creerGrille();
     
+    compteur = setInterval('decompte();',100);
 }
 
 var largeurGrille  = 5; // largeur en nombre de gros carré
 var joueurActif = 0; //retient le joueur actif
 var scoreJ1=0;
 var scoreJ2=0;
+var temps = 100; // on met le temps du decompte en dixième de seconde
+
+var tmp =temps;
+
+
 
 function creerGrille(){// création de la grille de jeu dans un tableau html
     
@@ -40,7 +46,11 @@ function creerGrille(){// création de la grille de jeu dans un tableau html
     
     // initialisation des scrores dans le HTML
     document.getElementById("score1").innerHTML=scoreJ1;
-        document.getElementById("score2").innerHTML=scoreJ2;
+    document.getElementById("score2").innerHTML=scoreJ2;
+    if(joueurActif==0)
+                document.getElementById("joueur").innerHTML="C'est au joueur 1";
+            else 
+                document.getElementById("joueur").innerHTML="C'est au joueur 2";
     
 }
 
@@ -66,9 +76,11 @@ function colorier(trait){// fonction qui colorie (elle porte plutot bien son nom
         //on actualise les scores dans le HTML
         document.getElementById("score1").innerHTML=scoreJ1;
         document.getElementById("score2").innerHTML=scoreJ2;
-        
-        
-        
+        if(joueurActif==0)
+                document.getElementById("joueur").innerHTML="C'est au joueur 1";
+            else 
+                document.getElementById("joueur").innerHTML="C'est au joueur 2";
+        tmp =temps;
     }
 }
 
@@ -125,3 +137,25 @@ function testCarre(trait){ // le test des carré (c'est le plus sympa :D)
     }
     
 }
+
+function decompte()
+{
+     tmp--;
+
+    if (tmp > 0) {
+        document.getElementById('timer').innerHTML = tmp/10;
+    }
+    else {tmp=temps;
+        document.getElementById('timer').innerHTML = tmp/10;
+        joueurActif=(joueurActif+1)%2;
+        if(joueurActif==0)
+                document.getElementById("joueur").innerHTML="C'est au joueur 1";
+            else 
+                document.getElementById("joueur").innerHTML="C'est au joueur 2";
+        tmp=temps;
+        // clearInterval(compteur);
+    }
+    
+
+}
+
