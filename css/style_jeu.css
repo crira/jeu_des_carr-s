@@ -1,7 +1,44 @@
-h1 {
-    color:red;
-    text-align: center;
+/* ---- CSS général ---- */
+body{
+	background-color: coral;
 }
+
+h1,h2{
+	text-align: center;
+}
+
+/* ---- Tableau jeu ---- */
+
+table{
+	margin-left: 10%;
+    margin-top: 2%;
+    float :left;
+	background-color: white;
+	border-radius: 0.55em;
+}
+
+/* ---- Case tableau ---- */
+.gros{
+	border-radius:0.5em;
+	background-color: #888;
+    width: 70px;
+    height: 70px;
+}
+
+/* ---- Points ralliements ---- */
+.petit{
+    background-color:white;
+    height: 2px;
+    width: 2px;
+    border-radius:0.2em;
+}
+
+
+
+
+
+
+
 
 nav {
     float: left;
@@ -19,15 +56,6 @@ nav {
     
 }
 
-table {
-    /*border-collapse:collapse;*/
-    border: 2px solid black;
-    margin-left: 10%;
-    margin-top: 2%;
-    float :left;
-    
-}
-
 td {
     width: 50px;
     height: 50px;
@@ -36,26 +64,16 @@ td {
 
 .largeur{
     
-    height: 10px;
+    height: 5px;
 }
 
 .hauteur{
     
-    width : 10px;
+    width : 5px;
 }
 
-.gros{
-    background-color: #888;
-    width: 50px;
-    height: 50px;
-}
 
-.petit{
-    background-color: #000;
-    height: 10px;
-    width: 10px;
-    border-radius: 10px;
-}
+
 
 .joueur1{
     background-color: #F00;
