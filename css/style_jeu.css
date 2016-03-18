@@ -1,10 +1,31 @@
 h1 {
     color:red;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    margin:  auto;
+}
+
+#score{
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+#score1,#score2{
+    
 }
 
 table {
     /*border-collapse:collapse;*/
     border: 2px solid black;
+    margin-left: 10%;
+    margin-top: 2%;
+    float :left;
+    
 }
 
 td {
@@ -24,7 +45,7 @@ td {
 }
 
 .gros{
-    background-color: #3C9;
+    background-color: #888;
     width: 50px;
     height: 50px;
 }
@@ -33,6 +54,7 @@ td {
     background-color: #000;
     height: 5px;
     width: 5px;
+    border-radius: 5px;
 }
 
 .joueur1{

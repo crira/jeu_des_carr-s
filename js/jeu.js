@@ -38,6 +38,10 @@ function creerGrille(){// création de la grille de jeu dans un tableau html
     // insertion du tableau dans le HTML
     document.getElementById("jeu").innerHTML=text;
     
+    // initialisation des scrores dans le HTML
+    document.getElementById("score1").innerHTML=scoreJ1;
+        document.getElementById("score2").innerHTML=scoreJ2;
+    
 }
 
 function colorier(trait){// fonction qui colorie (elle porte plutot bien son nom)
