@@ -18,6 +18,15 @@ table{
 	border-radius: 0.55em;
 }
 
+#jeu{
+	padding-left:100px;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+}
+
 /* ---- Case tableau ---- */
 .gros{
 	border-radius:0.5em;
@@ -54,34 +63,21 @@ table{
 	background-color: aqua;
 }
 
-#jeu{
-	padding-left:100px;
+/* ---- Score des deux joueurs ---- */
+#score1{
+	float:left;
 }
 
-
-
-
-
-nav {
-    float: left;
-    margin:  auto;
+#score2{
+	float:right;
 }
 
-#score{
-    float: left;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
+/* ---- Timer du jeu ---- */
+#id{
+	position:absolute;
+	clear:both;
 }
 
-#score1,#score2{
-    
-}
-
-td {
-    width: 50px;
-    height: 50px;
-}
 
 
 
