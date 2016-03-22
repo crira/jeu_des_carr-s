@@ -64,21 +64,26 @@ td {
 }
 
 /* ---- Score des deux joueurs ---- */
-#score1{
+#score1,.score1{
 	float:left;
+	
 }
 
-#score2{
+#score2,.score2{
 	float:right;
 }
 
 /* ---- Timer du jeu ---- */
-#id{
-	position:absolute;
-	clear:both;
+#timer{
+	position: absolute;
+	top:100px;
 }
 
-
+/* ---- Joueur ---- */
+#joueur{
+	position:absolute;
+	top:1000px;
+}
 
 
 

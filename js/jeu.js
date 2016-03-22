@@ -91,7 +91,7 @@ function testCarre(trait){ // le test des carré (c'est le plus sympa :D)
     coordX=parseInt(idTrait[0]);
     coordY=parseInt(idTrait[1]);
     
-    // si la case est vartical
+    // si la case est vertical
     if(document.getElementById(trait.id).classList.item(0)=="hauteur"){
         //on regarde si les 3 autres traits a droite sont remplis
         if(coordX<(largeurGrille*2+1)&&document.getElementById((coordX+2)+"-"+coordY).classList.item(1)!=null && document.getElementById((coordX+1)+"-"+(coordY+1)).classList.item(1)!=null&& document.getElementById((coordX+1)+"-"+(coordY-1)).classList.item(1)!=null){
