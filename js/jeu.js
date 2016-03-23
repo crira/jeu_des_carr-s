@@ -169,9 +169,9 @@ function decompte()
             document.getElementById('timer').innerHTML = (tmp/10)+".0";
         joueurActif=(joueurActif+1)%2;
         if(joueurActif==0)
-                document.getElementById("joueur").innerHTML="C'est au joueur 1";
+                document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
             else 
-                document.getElementById("joueur").innerHTML="C'est au joueur 2";
+                document.getElementById("joueur").innerHTML="TOUR JOUEUR 2";
         tmp=temps;
         // clearInterval(compteur);
     }
