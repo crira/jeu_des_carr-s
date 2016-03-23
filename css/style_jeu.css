@@ -61,7 +61,7 @@ td {
 }
 /* ---- Survol barres ---- */
 .hauteur:hover,.largeur:hover{
-	background-color: aqua;
+	background-color: black;
 }
 
 /* ---- Score des deux joueurs ---- */

@@ -4,7 +4,7 @@ window.onload  = function () {
     compteur = setInterval('decompte();',100);
 }
 
-var largeurGrille  = 5; // largeur en nombre de gros carré
+var largeurGrille  = 5; // largeur en nombre de gros carré (mettre un nombre impaire sinon on pourra avoir des égalités et on a pas envie)
 var joueurActif = 0; //retient le joueur actif
 var scoreJ1=0;
 var scoreJ2=0;
@@ -26,6 +26,7 @@ function reset (){
                 document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
             else 
                 document.getElementById("joueur").innerHTML="TOUR JOUEUR 2";
+    compteur = setInterval('decompte();',100);
 }
 
 function creerGrille(){// création de la grille de jeu dans un tableau html
@@ -90,11 +91,22 @@ function colorier(trait){// fonction qui colorie (elle porte plutot bien son nom
         //on actualise les scores dans le HTML
         document.getElementById("score1").innerHTML=scoreJ1;
         document.getElementById("score2").innerHTML=scoreJ2;
+        if(scoreJ1+scoreJ2!=largeurGrille*largeurGrille){
         if(joueurActif==0)
                 document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
             else 
                 document.getElementById("joueur").innerHTML="TOUR JOUEUR 2";
         tmp =temps;
+        }
+        else{clearInterval(compteur);
+             document.getElementById('timer').innerHTML = "";
+            if(scoreJ1>scoreJ2){
+                document.getElementById("joueur").innerHTML="Joueur 1 a gagné";
+            }
+            else{
+                document.getElementById("joueur").innerHTML="Joueur 2 a gagné";
+            }
+        }
     }
 }
 
@@ -152,8 +164,7 @@ function testCarre(trait){ // le test des carré (c'est le plus sympa :D)
     
 }
 
-function decompte()
-{
+function decompte(){
      tmp--;
 
     if (tmp > 0) {
