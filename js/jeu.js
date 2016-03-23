@@ -12,7 +12,21 @@ var temps = 100; // on met le temps du decompte en dixième de seconde
 
 var tmp =temps;
 
-
+function reset (){
+    creerGrille();
+    scoreJ1=0;
+    scoreJ2=0;
+    tmp = temps;
+    joueurActif = 0;
+    
+    // initialisation des scrores dans le HTML
+    document.getElementById("score1").innerHTML=scoreJ1;
+    document.getElementById("score2").innerHTML=scoreJ2;
+    if(joueurActif==0)
+                document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
+            else 
+                document.getElementById("joueur").innerHTML="TOUR JOUEUR 2";
+}
 
 function creerGrille(){// création de la grille de jeu dans un tableau html
     
@@ -143,10 +157,16 @@ function decompte()
      tmp--;
 
     if (tmp > 0) {
+        if(tmp%10!=0)
         document.getElementById('timer').innerHTML = tmp/10;
+        else
+            document.getElementById('timer').innerHTML = (tmp/10)+".0";
     }
     else {tmp=temps;
+        if(tmp%10!=0)
         document.getElementById('timer').innerHTML = tmp/10;
+        else
+            document.getElementById('timer').innerHTML = (tmp/10)+".0";
         joueurActif=(joueurActif+1)%2;
         if(joueurActif==0)
                 document.getElementById("joueur").innerHTML="C'est au joueur 1";
