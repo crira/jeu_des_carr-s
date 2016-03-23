@@ -1,7 +1,15 @@
+@font-face{
+	font-family: 'lubalinGraph';
+	src: url('font/Lubalin Graph Bold.ttf')format('ttf');
+}
+
 body{
 	background-color:cornflowerblue;
 	color:white;
+	font-family:lubalinGraph;
 }
+
+
 
 
 
