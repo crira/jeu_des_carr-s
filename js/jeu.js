@@ -48,9 +48,9 @@ function creerGrille(){// création de la grille de jeu dans un tableau html
     document.getElementById("score1").innerHTML=scoreJ1;
     document.getElementById("score2").innerHTML=scoreJ2;
     if(joueurActif==0)
-                document.getElementById("joueur").innerHTML="C'est au joueur 1";
+                document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
             else 
-                document.getElementById("joueur").innerHTML="C'est au joueur 2";
+                document.getElementById("joueur").innerHTML="TOUR JOUEUR 2";
     
 }
 
@@ -77,9 +77,9 @@ function colorier(trait){// fonction qui colorie (elle porte plutot bien son nom
         document.getElementById("score1").innerHTML=scoreJ1;
         document.getElementById("score2").innerHTML=scoreJ2;
         if(joueurActif==0)
-                document.getElementById("joueur").innerHTML="C'est au joueur 1";
+                document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
             else 
-                document.getElementById("joueur").innerHTML="C'est au joueur 2";
+                document.getElementById("joueur").innerHTML="TOUR JOUEUR 2";
         tmp =temps;
     }
 }

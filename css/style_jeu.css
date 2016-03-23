@@ -1,6 +1,6 @@
 /* ---- CSS général ---- */
 body{
-	background-color: coral;
+	background-color: cornflowerblue;
 	color: white;
 }
 
@@ -19,7 +19,8 @@ table{
 }
 
 #jeu{
-	padding-left:100px;
+	display: block;
+	margin:auto;
 }
 
 td {
@@ -64,29 +65,21 @@ td {
 }
 
 /* ---- Score des deux joueurs ---- */
-#score1,.score1{
-	float:left;
-	
-}
-
-#score2,.score2{
-	float:right;
-}
-
 /* ---- Timer du jeu ---- */
-#timer{
-	position: absolute;
-	top:100px;
+.droit{
+	float:right;
+	margin-right:200px;
+	padding:20px;
+	text-align: center;
+	background-color: white;
+	border-radius: 0.4em;
+	color:cornflowerblue;
 }
 
-/* ---- Joueur ---- */
-#joueur{
-	position:absolute;
-	top:1000px;
+.bouton{
+	background-color: aquamarine;
+	display:inline-block;
 }
-
-
-
 
 .joueur1{
     background-color: #F00;
