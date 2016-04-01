@@ -36,15 +36,15 @@ function creerGrille(){// création de la grille de jeu dans un tableau html
     for (var i=1;i<=(largeurGrille*2+1);i++){
         text+="<tr>";
         for(var j=1;j<=(largeurGrille*2+1);j++){ 
-            if(i%2!=0&&j%2!=0){//ces cases sont les petits carrés entre les traits
+            if(i%2!=0 && j%2!=0){//ces cases sont les petits carrés entre les traits
                 text+="<td id="+j+"-"+i+" class=\"petit\"></td>";
             }
             else{ // ces cases sont les traits horizontaux
-            if(i%2!=0){
+            if(i%2 != 0){
                 text+="<td id="+j+"-"+i+" class=\"largeur\" onclick=\"colorier(this)\"></td>";// appelle de la fonction colorier uniquement sur les traits fins
             }
             else{ // ces cases sont les traits verticaux
-                if(j%2!=0){
+                if(j%2 != 0){
                     text+="<td id="+j+"-"+i+" class=\"hauteur\" onclick=\"colorier(this)\"></td>";// appelle de la fonction colorier uniquement sur les traits fins
             }
             else{ // ces cases sont les gros carrés a prendre
@@ -91,20 +91,24 @@ function colorier(trait){// fonction qui colorie (elle porte plutot bien son nom
         //on actualise les scores dans le HTML
         document.getElementById("score1").innerHTML=scoreJ1;
         document.getElementById("score2").innerHTML=scoreJ2;
-        if(scoreJ1+scoreJ2!=largeurGrille*largeurGrille){
-        if(joueurActif==0)
+        
+        if(scoreJ1+scoreJ2!=largeurGrille*largeurGrille){//on test si le score maximal est atteind
+            if(joueurActif==0)// changement de joueur ou non
                 document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
             else 
                 document.getElementById("joueur").innerHTML="TOUR JOUEUR 2";
         tmp =temps;
         }
-        else{clearInterval(compteur);
-             document.getElementById('timer').innerHTML = "";
-            if(scoreJ1>scoreJ2){
+        else{
+            clearInterval(compteur);// on arrete le compteur
+            document.getElementById('timer').innerHTML = "";
+            if(scoreJ1>scoreJ2){// on annonce le gagnant
                 document.getElementById("joueur").innerHTML="Joueur 1 a gagné";
+                document.getElementById('timer').removeAttribute
             }
             else{
                 document.getElementById("joueur").innerHTML="Joueur 2 a gagné";
+                document.getElementById('timer').removeAttribute
             }
         }
     }
@@ -164,27 +168,30 @@ function testCarre(trait){ // le test des carré (c'est le plus sympa :D)
     
 }
 
-function decompte(){
+function decompte(){// fonction du décompte
      tmp--;
-
     if (tmp > 0) {
         if(tmp%10!=0)
         document.getElementById('timer').innerHTML = tmp/10;
         else
             document.getElementById('timer').innerHTML = (tmp/10)+".0";
     }
-    else {tmp=temps;
+    else {// si le decompte arrive a 0 on change de joueur
+        tmp=temps;
+        // on actualise le html
         if(tmp%10!=0)
-        document.getElementById('timer').innerHTML = tmp/10;
+            document.getElementById('timer').innerHTML = tmp/10;
         else
             document.getElementById('timer').innerHTML = (tmp/10)+".0";
+        
         joueurActif=(joueurActif+1)%2;
+        
         if(joueurActif==0)
                 document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
-            else 
+        else 
                 document.getElementById("joueur").innerHTML="TOUR JOUEUR 2";
+        
         tmp=temps;
-        // clearInterval(compteur);
     }
     
 
