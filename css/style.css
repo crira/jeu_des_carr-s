@@ -8,10 +8,9 @@
 	text-align:left;
 }
 
-.row1, .row1 a{
-	color:#C0BAB6;
-	background-color:#333333;
-}
+/* number row */
+.row1, .row1 a{color:#C0BAB6;background-color:#333333;}
+.row2{color:#979797; background-color:#FFFFFF;}
 
 /* ---- Header ---- */
 #header #titre{
@@ -56,6 +55,10 @@ a{
 	display:block;
 	clear:both;
 }
+
+/* ---- Container ---- */
+#container #slider #video{float:left; width:630px; height:300px;}
+#video{background-color: cadetblue;}
 
 
 
