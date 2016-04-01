@@ -1,14 +1,61 @@
-@font-face{
-	font-family: 'lubalinGraph';
-	src: url('font/Lubalin Graph Bold.ttf')format('ttf');
+
+/* ---- div wrapper ---- */
+#menu{
+	display:block;
+	width:100%;
+	margin:0;
+	padding:0;
+	text-align:left;
 }
 
-body{
-	background-color:cornflowerblue;
-	color:white;
-	font-family:lubalinGraph;
+.row1, .row1 a{
+	color:#C0BAB6;
+	background-color:#333333;
 }
 
+/* ---- Header ---- */
+#header #titre{
+	float:left;
+	padding:20px 0;
+}
+
+#header #titre h1, #header{
+	font-weight:normal; 
+	text-transform:none;
+}
+#header #titre h1{
+	font-size:36px;
+}
+
+#header nav{
+	display:block;
+	width:100%;
+	margin:0;
+	padding:20px 0;
+}
+#header nav li{
+	display:inline-block; 
+	margin-right:25px; 
+	text-transform:uppercase;	
+}
+#header nav li.last{
+	margin-right:0;
+}
+
+a{
+	text-decoration: none;
+}
+
+#header nav li a:hover{
+	color:cornflowerblue; 
+	background-color:#333333;
+}
+
+/* ---- Clear ---- */
+.clear{
+	display:block;
+	clear:both;
+}
 
 
 
