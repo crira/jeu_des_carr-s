@@ -70,7 +70,7 @@ video{
 	float:left;
 	width:630px;
 	height:300px;
-	background-color:#333333
+	/*background-color:#333333*/
 }
 
 #haut #texte{
@@ -105,4 +105,59 @@ footer{
 	background-color:#232323;
 }
 
+/*----------------------------------------------Page Jeu-------------------------------------*/
+
+table{
+	float:left;
+	background-color: white;
+	border-radius: 0.55em;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* ---- Case tableau ---- */
+.gros{
+	border-radius:0.5em;
+	background-color: #888;
+    width: 70px;
+    height: 70px;
+}
+
+/* ---- Points ralliements ---- */
+.petit{
+    background-color:white;
+    height: 2px;
+    width: 2px;
+    border-radius:0.2em;
+}
+
+/* ---- Barres ---- */
+
+.largeur{height: 8px;}
+
+.hauteur{ width : 8px;}
+
+.hauteur,.largeur{border-radius: 0.2em;}
+
+/* ---- Survol barres ---- */
+.hauteur:hover,.largeur:hover{background-color: black;}
+
+
+.bouton{
+	background-color: dodgerblue;
+}
+
+.joueur1{
+    background-color: #F00;
+    
+}
+
+.joueur2{
+    background-color: #0F0;
+    
+}
 

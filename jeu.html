@@ -4,43 +4,52 @@
         <!-- Header classique -->
 		<meta charset="utf-8">
         <script type="text/javascript" src="js/jeu.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/style_jeu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
     </head>
 	
 	<body>
+		<!-- div qui englobe la barre de menu et le titre du jeu-->
 		<div class="menu row1">
 			<header id="header" class="clear">
 				<!-- Barre de navigation -->
 				<nav>
 					<ul>
 						<li><a href="#">Les développeurs</a></li>
-						<li><a href="jeu.html"> Commencer à jouer</a></li>
-						<li><a href="#">Les règles du jeu</a></li>
+						<li><a href="index.html"> Règles du jeu</a></li>
 					</ul>
 				</nav>
 				<!-- Titre-->
 				<div id="titre">
-					<h1>Le jeu des carrés</h1>
+					<h1><a href="index.html">Le jeu des carrés</a></h1>
 				</div>
 			</header>
 		</div>
 		
 		<!-- Div qui contient la table de jeu et les scores des joueurs-->
-		<div id="container">
-			
-			<!-- Tableau des cores-->
-			<div class="droit">
-				<h2>Score du joueur 1: </h2><div id="score1"></div>
-				<!-- Indique quel joueur va jouer-->
-				<div id="joueur"></div>
-				<!--Timer du jeu-->
-				<div id="timer"></div>
-				<h2>Score du joueur 2: </h2><div id="score2"></div>
+		<div class="menu row2">
+			<div id="container" class="clear">
+				<section id="slider" class="clear">
+					<div id="haut">
+						<!--Table de jeu-->
+						<div id="jeu"></div>
+
+						<!-- Tableau des cores-->
+						<div id="score">
+							<h2>Score du joueur 1: </h2><div id="score1"></div>
+							<!-- Indique quel joueur va jouer-->
+							<div id="joueur"></div>
+							<!--Timer du jeu-->
+							<div id="timer"></div>
+							<h2>Score du joueur 2: </h2><div id="score2"></div>
+						</div>
+					</div>
+				</section>
 			</div>
-				<!--Table de jeu-->
-			<div id="jeu"></div>
-			<button class="bouton" onclick="reset()">RESET GAME</button>
+		<button class="bouton" onclick="reset()">RESET GAME</button>
+
 		</div>
+		
+		<footer><p>Projet Final HTML 5 | 2016</p></footer>
 
 	</body>
 </html>
