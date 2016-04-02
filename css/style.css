@@ -1,18 +1,27 @@
-
-/* ---- div wrapper ---- */
+/*----------------------------------------------CSS général-------------------------------------*/
+body,nav ul,h1,h2,#menu,footer p{
+	margin:0;
+	padding:0;
+}
 #menu{
 	display:block;
 	width:100%;
-	margin:0;
-	padding:0;
 	text-align:left;
 }
 
-/* number row */
-.row1, .row1 a{color:#C0BAB6;background-color:#333333;}
-.row2{color:#979797; background-color:#FFFFFF;}
+a{text-decoration: none;}
 
-/* ---- Header ---- */
+.clear{display:block;clear:both;}
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+
+#header, #container, #footer{display:block; width:1000px; margin:0 auto;}
+
+nav ul{list-style:none;}
+
+h1, h2{font-size:20px;}
+
+/*----------------------------------------------Section du haut-------------------------------------*/
+
 #header #titre{
 	float:left;
 	padding:20px 0;
@@ -31,18 +40,12 @@
 	width:100%;
 	margin:0;
 	padding:20px 0;
+	border-bottom:1px solid #DEDEDE;
 }
 #header nav li{
-	display:inline-block; 
+	display:inline; 
 	margin-right:25px; 
 	text-transform:uppercase;	
-}
-#header nav li.last{
-	margin-right:0;
-}
-
-a{
-	text-decoration: none;
 }
 
 #header nav li a:hover{
@@ -50,16 +53,56 @@ a{
 	background-color:#333333;
 }
 
-/* ---- Clear ---- */
-.clear{
-	display:block;
-	clear:both;
+.row1, .row1 a{color:#C0BAB6;background-color:#333333;}
+
+/*----------------------------------------------Section du bas-------------------------------------*/
+#container{
+	padding:30px 0;
 }
 
-/* ---- Container ---- */
-#container #slider #video{float:left; width:630px; height:300px;}
-#video{background-color: cadetblue;}
+#container section{
+	display: block;
+	width:100%;
+	margin:0 0 15px 0;
+	padding:0;
+}
+#video{
+	float:left;
+	width:630px;
+	height:300px;
+	background-color:#333333
+}
 
+#haut #texte{
+	display:block; 
+	float:right; 
+	width:260px; 
+	height:260px; 
+	padding:20px; 
+	color:#989898; 
+	background-color:#333333;
+	line-height:1.8em;
+}
+#haut #texte a{
+	color:#FF9900;
+	background-color:#333333;
+}
+#haut #texte h2{
+	padding-bottom:8px; 
+	border-bottom:1px solid #DEDEDE;}
 
+#description{
+	display:block;
+	width:100%;
+	line-height:1.6em;
+}
+
+/*----------------------------------------------Footer-------------------------------------*/
+
+footer{
+	padding:20px 0;
+	color:#919191;
+	background-color:#232323;
+}
 
 
