@@ -21,7 +21,6 @@ nav ul{list-style:none;}
 h1, h2{font-size:20px;}
 
 /*----------------------------------------------Section du haut-------------------------------------*/
-
 #header #titre{
 	float:left;
 	padding:20px 0;
@@ -40,7 +39,6 @@ h1, h2{font-size:20px;}
 	width:100%;
 	margin:0;
 	padding:20px 0;
-	border-bottom:1px solid #DEDEDE;
 }
 #header nav li{
 	display:inline; 
@@ -50,7 +48,7 @@ h1, h2{font-size:20px;}
 
 #header nav li a:hover{
 	color:cornflowerblue; 
-	background-color:#333333;
+	background-color:#333;
 }
 
 .row1, .row1 a{color:#C0BAB6;background-color:#333333;}
@@ -70,22 +68,19 @@ video{
 	float:left;
 	width:630px;
 	height:300px;
-	/*background-color:#333333*/
 }
-
-#haut #texte{
-	display:block; 
-	float:right; 
+#texte{
+	padding:20px;
 	width:260px; 
-	height:260px; 
-	padding:20px; 
-	color:#989898; 
-	background-color:#333333;
+	height:260px;
+	display:block; 
+	float:right;  
+	color:#333;
 	line-height:1.8em;
 }
 #haut #texte a{
-	color:#FF9900;
-	background-color:#333333;
+	color:cornflowerblue;
+	background-color:#333;
 }
 #haut #texte h2{
 	padding-bottom:8px; 
@@ -98,7 +93,6 @@ video{
 }
 
 /*----------------------------------------------Footer-------------------------------------*/
-
 footer{
 	padding:20px 0;
 	color:#919191;
@@ -106,11 +100,20 @@ footer{
 }
 
 /*----------------------------------------------Page Jeu-------------------------------------*/
+#jeu{
+	margin-left: 300px;
+}
+.a{
+	float:left;
+}
+.b{
+	float:right;
+}
 
 table{
 	float:left;
-	background-color: white;
-	border-radius: 0.55em;
+    background-color:#333;
+    border-radius: 0.4em;
 }
 
 td {
@@ -122,14 +125,14 @@ td {
 /* ---- Case tableau ---- */
 .gros{
 	border-radius:0.5em;
-	background-color: #888;
+	background-color: #fff;
     width: 70px;
     height: 70px;
 }
 
 /* ---- Points ralliements ---- */
 .petit{
-    background-color:white;
+    background-color:#333;
     height: 2px;
     width: 2px;
     border-radius:0.2em;
@@ -144,20 +147,24 @@ td {
 .hauteur,.largeur{border-radius: 0.2em;}
 
 /* ---- Survol barres ---- */
-.hauteur:hover,.largeur:hover{background-color: black;}
+.hauteur:hover,.largeur:hover{background-color: #428bca;}
 
 
 .bouton{
-	background-color: dodgerblue;
+	color:#fff;
+  	background-color: #428bca;
+	border: 1px solid transparent;
+  	border-radius: 4px;
+	padding: 15px 15px;
+
 }
 
-.joueur1{
-    background-color: #F00;
-    
+.bouton:hover{
+	color: #333;
+  	background-color: #ebebeb;
 }
 
-.joueur2{
-    background-color: #0F0;
-    
-}
+.joueur1{background-color: #F00;}
+
+.joueur2{background-color: #0F0;}
 

@@ -23,9 +23,9 @@ function reset (){
     document.getElementById("score1").innerHTML=scoreJ1;
     document.getElementById("score2").innerHTML=scoreJ2;
     if(joueurActif==0)
-                document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
+                document.getElementById("joueur").innerHTML=" JOUEUR 1";
             else 
-                document.getElementById("joueur").innerHTML="TOUR JOUEUR 2";
+                document.getElementById("joueur").innerHTML=" JOUEUR 2";
     compteur = setInterval('decompte();',100);
 }
 
@@ -63,9 +63,9 @@ function creerGrille(){// création de la grille de jeu dans un tableau html
     document.getElementById("score1").innerHTML=scoreJ1;
     document.getElementById("score2").innerHTML=scoreJ2;
     if(joueurActif==0)
-                document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
+                document.getElementById("joueur").innerHTML=" JOUEUR 1";
             else 
-                document.getElementById("joueur").innerHTML="TOUR JOUEUR 2";
+                document.getElementById("joueur").innerHTML=" JOUEUR 2";
     
 }
 
@@ -94,9 +94,9 @@ function colorier(trait){// fonction qui colorie (elle porte plutot bien son nom
         
         if(scoreJ1+scoreJ2!=largeurGrille*largeurGrille){//on test si le score maximal est atteind
             if(joueurActif==0)// changement de joueur ou non
-                document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
+                document.getElementById("joueur").innerHTML=" JOUEUR 1";
             else 
-                document.getElementById("joueur").innerHTML="TOUR JOUEUR 2";
+                document.getElementById("joueur").innerHTML=" JOUEUR 2";
         tmp =temps;
         }
         else{
@@ -187,9 +187,9 @@ function decompte(){// fonction du décompte
         joueurActif=(joueurActif+1)%2;
         
         if(joueurActif==0)
-                document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
+                document.getElementById("joueur").innerHTML=" JOUEUR 1";
         else 
-                document.getElementById("joueur").innerHTML="TOUR JOUEUR 2";
+                document.getElementById("joueur").innerHTML=" JOUEUR 2";
         
         tmp=temps;
     }

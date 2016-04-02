@@ -18,6 +18,7 @@
 						<li><a href="index.html"> Règles du jeu</a></li>
 					</ul>
 				</nav>
+				<hr>
 				<!-- Titre-->
 				<div id="titre">
 					<h1><a href="index.html">Le jeu des carrés</a></h1>
@@ -28,24 +29,28 @@
 		<!-- Div qui contient la table de jeu et les scores des joueurs-->
 		<div class="menu row2">
 			<div id="container" class="clear">
-				<section id="slider" class="clear">
+				<!-- Indique quel joueur va jouer-->
+					<div id="joueur"></div>
+					<!--Timer du jeu-->
+					<div id="timer"></div>
+				<section class="clear">
 					<div id="haut">
+						
+						
+						
+						<!-- Tableau des cores-->
+						<div class="a"><h2>Score du joueur 1: </h2><div id="score1"></div></div>
+						
 						<!--Table de jeu-->
 						<div id="jeu"></div>
 
-						<!-- Tableau des cores-->
-						<div id="score">
-							<h2>Score du joueur 1: </h2><div id="score1"></div>
-							<!-- Indique quel joueur va jouer-->
-							<div id="joueur"></div>
-							<!--Timer du jeu-->
-							<div id="timer"></div>
-							<h2>Score du joueur 2: </h2><div id="score2"></div>
+						<div class="b"><h2>Score du joueur 2: </h2><div id="score2"></div>
+
 						</div>
 					</div>
 				</section>
+									<button class="bouton" onclick="reset()">RESET GAME</button>
 			</div>
-		<button class="bouton" onclick="reset()">RESET GAME</button>
 
 		</div>
 		
