@@ -1,5 +1,5 @@
 /*----------------------------------------------CSS général-------------------------------------*/
-body,nav ul,h1,h2,#menu,footer p{
+body,nav ul,h1,h2,#menu,footer p,pre,cite{
 	margin:0;
 	padding:0;
 	font-family: verdana;
@@ -150,8 +150,8 @@ td {
 .gros{
 	border-radius:0.5em;
 	background-color: #fff;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 
 /* ---- Points ralliements ---- */
@@ -164,9 +164,9 @@ td {
 
 /* ---- Barres ---- */
 
-.largeur{height: 8px;}
+.largeur{height: 6px;}
 
-.hauteur{ width : 8px;}
+.hauteur{ width : 6px;}
 
 .hauteur,.largeur{border-radius: 0.2em;}
 
@@ -176,12 +176,13 @@ td {
 
 .bouton{
 	display: block;
-  margin : auto;
+	margin : auto;
 	color:#fff;
   	background-color: #428bca;
 	border: 1px solid transparent;
   	border-radius: 4px;
 	padding:15px;
+	margin-bottom: 15px;
 	
 
 }

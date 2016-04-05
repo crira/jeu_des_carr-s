@@ -4,7 +4,7 @@ window.onload  = function () {
     compteur = setInterval('decompte();',100);
 }
 
-var largeurGrille  = 4; // largeur en nombre de gros carré (mettre un nombre impaire sinon on pourra avoir des égalités et on a pas envie)
+var largeurGrille  = 6; // largeur en nombre de gros carré (mettre un nombre impaire sinon on pourra avoir des égalités et on a pas envie)
 var joueurActif = 0; //retient le joueur actif
 var scoreJ1=0;
 var scoreJ2=0;
