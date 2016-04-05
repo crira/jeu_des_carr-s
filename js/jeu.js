@@ -93,8 +93,6 @@ function colorier(trait){// fonction qui colorie (elle porte plutot bien son nom
         document.getElementById("score2").innerHTML=scoreJ2;
         
         if(scoreJ1+scoreJ2!=largeurGrille*largeurGrille){//on test si le score maximal est atteint
-            if(joueurActif==0)// 
-                document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
             if(joueurActif==0)// changement de joueur ou non
                 document.getElementById("joueur").innerHTML=" JOUEUR 1";
             else 
