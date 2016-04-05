@@ -2,6 +2,7 @@
 body,nav ul,h1,h2,#menu,footer p{
 	margin:0;
 	padding:0;
+	font-family: verdana;
 }
 #menu{
 	display:block;
@@ -54,6 +55,7 @@ h1, h2{font-size:20px;}
 .row1, .row1 a{color:#C0BAB6;background-color:#333333;}
 
 /*----------------------------------------------Section du bas-------------------------------------*/
+
 #container{
 	padding:30px 0;
 }
@@ -76,7 +78,7 @@ video{
 	display:block; 
 	float:right;  
 	color:#333;
-	line-height:1.8em;
+
 }
 #haut #texte a{
 	color:cornflowerblue;
@@ -108,7 +110,18 @@ footer{
 	margin: 1%;
 
 }
+#joueur,#timer{
+	padding-bottom: 10px;
+	line-height: 2em;
+	font-weight: bold;
+}
 #joueur,#timer,.a,.b{text-align: center;}
+
+.a,.b{
+	background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+}
 
 .a{	width: 25%;
 	float: left;
