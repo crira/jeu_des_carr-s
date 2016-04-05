@@ -14,7 +14,7 @@ a{text-decoration: none;}
 .clear{display:block;clear:both;}
 .clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
 
-#header, #container, #footer{display:block; width:1000px; margin:0 auto;}
+#header, #container, #footer,#container_jeu{display:block; width:1000px; margin:0 auto;}
 
 nav ul{list-style:none;}
 
@@ -100,20 +100,31 @@ footer{
 }
 
 /*----------------------------------------------Page Jeu-------------------------------------*/
-#jeu{
-	margin-left: 300px;
+
+.main{
+	width:auto;
+	height: auto;
+	float: left;
+	margin: 1%;
+
 }
-.a{
-	float:left;
-}
-.b{
-	float:right;
-}
+#joueur,#timer,.a,.b{text-align: center;}
+
+.a{	width: 25%;
+	float: left;
+	margin: 1%;
+	padding: 1%;}
+.b{	width: 25%;
+	float: left;
+	margin: 1%;
+	padding: 1%;}
 
 table{
-	float:left;
     background-color:#333;
     border-radius: 0.4em;
+	width: 100%;
+	margin: auto;
+
 }
 
 td {
@@ -151,11 +162,14 @@ td {
 
 
 .bouton{
+	display: block;
+  margin : auto;
 	color:#fff;
   	background-color: #428bca;
 	border: 1px solid transparent;
   	border-radius: 4px;
-	padding: 15px 15px;
+	padding:15px;
+	
 
 }
 
