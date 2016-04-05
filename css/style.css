@@ -1,15 +1,170 @@
-@font-face{
-	font-family: 'lubalinGraph';
-	src: url('font/Lubalin Graph Bold.ttf')format('ttf');
+/*----------------------------------------------CSS général-------------------------------------*/
+body,nav ul,h1,h2,#menu,footer p{
+	margin:0;
+	padding:0;
+}
+#menu{
+	display:block;
+	width:100%;
+	text-align:left;
 }
 
-body{
-	background-color:cornflowerblue;
-	color:white;
-	font-family:lubalinGraph;
+a{text-decoration: none;}
+
+.clear{display:block;clear:both;}
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+
+#header, #container, #footer{display:block; width:1000px; margin:0 auto;}
+
+nav ul{list-style:none;}
+
+h1, h2{font-size:20px;}
+
+/*----------------------------------------------Section du haut-------------------------------------*/
+#header #titre{
+	float:left;
+	padding:20px 0;
+}
+
+#header #titre h1, #header{
+	font-weight:normal; 
+	text-transform:none;
+}
+#header #titre h1{
+	font-size:36px;
+}
+
+#header nav{
+	display:block;
+	width:100%;
+	margin:0;
+	padding:20px 0;
+}
+#header nav li{
+	display:inline; 
+	margin-right:25px; 
+	text-transform:uppercase;	
+}
+
+#header nav li a:hover{
+	color:cornflowerblue; 
+	background-color:#333;
+}
+
+.row1, .row1 a{color:#C0BAB6;background-color:#333333;}
+
+/*----------------------------------------------Section du bas-------------------------------------*/
+#container{
+	padding:30px 0;
+}
+
+#container section{
+	display: block;
+	width:100%;
+	margin:0 0 15px 0;
+	padding:0;
+}
+video{
+	float:left;
+	width:630px;
+	height:300px;
+}
+#texte{
+	padding:20px;
+	width:260px; 
+	height:260px;
+	display:block; 
+	float:right;  
+	color:#333;
+	line-height:1.8em;
+}
+#haut #texte a{
+	color:cornflowerblue;
+	background-color:#333;
+}
+#haut #texte h2{
+	padding-bottom:8px; 
+	border-bottom:1px solid #DEDEDE;}
+
+#description{
+	display:block;
+	width:100%;
+	line-height:1.6em;
+}
+
+/*----------------------------------------------Footer-------------------------------------*/
+footer{
+	padding:20px 0;
+	color:#919191;
+	background-color:#232323;
+}
+
+/*----------------------------------------------Page Jeu-------------------------------------*/
+#jeu{
+	margin-left: 300px;
+}
+.a{
+	float:left;
+}
+.b{
+	float:right;
+}
+
+table{
+	float:left;
+    background-color:#333;
+    border-radius: 0.4em;
+}
+
+td {
+    width: 50px;
+    height: 50px;
 }
 
 
+/* ---- Case tableau ---- */
+.gros{
+	border-radius:0.5em;
+	background-color: #fff;
+    width: 70px;
+    height: 70px;
+}
+
+/* ---- Points ralliements ---- */
+.petit{
+    background-color:#333;
+    height: 2px;
+    width: 2px;
+    border-radius:0.2em;
+}
+
+/* ---- Barres ---- */
+
+.largeur{height: 8px;}
+
+.hauteur{ width : 8px;}
+
+.hauteur,.largeur{border-radius: 0.2em;}
+
+/* ---- Survol barres ---- */
+.hauteur:hover,.largeur:hover{background-color: #428bca;}
 
 
+.bouton{
+	color:#fff;
+  	background-color: #428bca;
+	border: 1px solid transparent;
+  	border-radius: 4px;
+	padding: 15px 15px;
+
+}
+
+.bouton:hover{
+	color: #333;
+  	background-color: #ebebeb;
+}
+
+.joueur1{background-color: #F00;}
+
+.joueur2{background-color: #0F0;}
 
