@@ -9,6 +9,10 @@ body,nav ul,h1,h2,#menu,footer p,pre,cite{
 	width:100%;
 	text-align:left;
 }
+pre{
+	color: #006699;
+	font-weight: bold;
+}
 
 a{text-decoration: none;}
 
@@ -48,7 +52,7 @@ h1, h2{font-size:20px;}
 }
 
 #header nav li a:hover{
-	color:cornflowerblue; 
+	color:#006699; 
 	background-color:#333;
 }
 
@@ -146,6 +150,7 @@ td {
 }
 
 
+
 /* ---- Case tableau ---- */
 .gros{
 	border-radius:0.5em;
@@ -177,9 +182,12 @@ td {
 .bouton{
 	display: block;
 	margin : auto;
-	color:#fff;
-  	background-color: #428bca;
-	border: 1px solid transparent;
+    color:#666;
+    background:#ddd;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    transition: all .4s ease-in;
   	border-radius: 4px;
 	padding:15px;
 	margin-bottom: 15px;
@@ -188,8 +196,8 @@ td {
 }
 
 .bouton:hover{
-	color: #333;
-  	background-color: #ebebeb;
+    color:#fff;
+    background:#006699;
 }
 
 .joueur1{background-color: #F00;}
