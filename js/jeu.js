@@ -4,9 +4,7 @@ window.onload  = function () {
     compteur = setInterval('decompte();',100);
 }
 
-var largeurGrille  = 7; // largeur en nombre de gros carré (mettre un nombre impaire sinon on pourra avoir des égalités et on a pas envie)
-
-var largeurGrille  = 5; // largeur en nombre de gros carré (mettre un nombre impaire sinon on pourra avoir des égalités et on a pas envie)
+var largeurGrille  = 3; // largeur en nombre de gros carré (mettre un nombre impaire sinon on pourra avoir des égalités et on a pas envie)
 
 var joueurActif = 0; //retient le joueur actif
 var scoreJ1=0;
@@ -108,10 +106,12 @@ function colorier(trait){// fonction qui colorie (elle porte plutot bien son nom
             if(scoreJ1>scoreJ2){
                 document.getElementById("joueur").innerHTML="Joueur 1 a gagné";
                 document.getElementById('timer').removeAttribute
+                alert("Joueur 1 a gagné")
             }
             else{
                 document.getElementById("joueur").innerHTML="Joueur 2 a gagné";
                 document.getElementById('timer').removeAttribute
+                alert("Joueur 2 a gagné")
             }
         }
     }
