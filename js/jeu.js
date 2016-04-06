@@ -213,15 +213,15 @@ function prog()
 	tmp --;
 	    if (tmp > 0) {// mise a jour du timer dans le html
         if(tmp%10!=0)
-        document.getElementById('timer').innerHTML = tmp/10;
+        document.getElementById('progressbar').innerHTML = tmp/10;
         else
-            document.getElementById('timer').innerHTML = (tmp/10)+".0";
+            document.getElementById('progressbar').innerHTML = (tmp/10)+".0";
     }    else {//si le timer est a 0 on change de joueur et met a jour le html
         tmp=temps;
         if(tmp%10!=0)
-        document.getElementById('timer').innerHTML = tmp/10;
+        document.getElementById('progressbar').innerHTML = tmp/10;
         else
-            document.getElementById('timer').innerHTML = (tmp/10)+".0";
+            document.getElementById('progressbar').innerHTML = (tmp/10)+".0";
         joueurActif=(joueurActif+1)%2;
         if(joueurActif==0)
                 document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
