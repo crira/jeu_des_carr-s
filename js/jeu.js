@@ -6,8 +6,6 @@ window.onload  = function () {
 
 var largeurGrille  = 7; // largeur en nombre de gros carré (mettre un nombre impaire sinon on pourra avoir des égalités et on a pas envie)
 
-var largeurGrille  = 5; // largeur en nombre de gros carré (mettre un nombre impaire sinon on pourra avoir des égalités et on a pas envie)
-
 var joueurActif = 0; //retient le joueur actif
 var scoreJ1=0;
 var scoreJ2=0;
