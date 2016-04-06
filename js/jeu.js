@@ -202,7 +202,7 @@ function decompte(){// timer
 
 
 //barre de progression
-var maxprogress = 50;   // total à atteindre
+var maxprogress = temps;   // total à atteindre
 var actualprogress = 0;  // valeur courante
 var itv = 0;  // id pour setinterval
 function prog()
@@ -214,7 +214,7 @@ function prog()
   }	
   var progressnum = document.getElementById("progressnum");
   var indicator = document.getElementById("indicator");
-  actualprogress += 1;	
+  actualprogress += tmp;
   indicator.style.width=actualprogress + "px";
   progressnum.innerHTML = actualprogress;
   if(actualprogress == maxprogress) clearInterval(itv);   
