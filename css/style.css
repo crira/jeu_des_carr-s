@@ -126,6 +126,8 @@ footer{
     border: 1px solid #e3e3e3;
     border-radius: 4px;
 }
+.a h2{color:RGB(72,72,255);}
+.b h2{color:RGB(128,255,128);}
 
 .a{	width: 25%;
 	float: left;
@@ -204,9 +206,9 @@ td {
     background:#006699;
 }
 
-.joueur1{background-color: #F00;}
+.joueur1{background-color: RGB(72,72,255);}
 
-.joueur2{background-color: #0F0;}
+.joueur2{background-color: RGB(128,255,128);}
 /*----------------------------------------------Progress Bar-------------------------------------*/
 #pwidget
 {
