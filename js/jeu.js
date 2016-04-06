@@ -99,7 +99,6 @@ function colorier(trait){// fonction qui colorie (elle porte plutot bien son nom
 =======
             if(joueurActif==0)// changement de joueur ou non
                 document.getElementById("joueur").innerHTML=" JOUEUR 1";
->>>>>>> origin/master
             else 
                 document.getElementById("joueur").innerHTML=" JOUEUR 2";
         tmp =temps;
@@ -190,16 +189,10 @@ function decompte(){// timer
             document.getElementById('timer').innerHTML = (tmp/10)+".0";
         joueurActif=(joueurActif+1)%2;
         if(joueurActif==0)
-<<<<<<< HEAD
                 document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
             else 
                 document.getElementById("joueur").innerHTML="TOUR JOUEUR 2";
-=======
-                document.getElementById("joueur").innerHTML=" JOUEUR 1";
-        else 
-                document.getElementById("joueur").innerHTML=" JOUEUR 2";
-        
->>>>>>> origin/master
+
         tmp=temps;
         // clearInterval(compteur);
     }
