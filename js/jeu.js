@@ -1,7 +1,7 @@
 window.onload  = function () {
     creerGrille();
     
-    compteur = setInterval('decompte();',100);
+    compteur = setInterval('prog();',100);
 }
 
 <<<<<<< HEAD
@@ -31,7 +31,7 @@ function reset (){
                 document.getElementById("joueur").innerHTML=" JOUEUR 1";
             else 
                 document.getElementById("joueur").innerHTML=" JOUEUR 2";
-    compteur = setInterval('decompte();',100);
+    compteur = setInterval('prog();',100);
 }
 
 function creerGrille(){// création de la grille de jeu dans un tableau html
@@ -201,5 +201,47 @@ function decompte(){// timer
         // clearInterval(compteur);
     }
     
+}
 
+
+//barre de progression
+var maxprogress = 250;   // total à atteindre
+var actualprogress = 0;  // valeur courante
+var itv = 0;  // id pour setinterval
+function prog()
+{
+	tmp --;
+	    if (tmp > 0) {// mise a jour du timer dans le html
+        if(tmp%10!=0)
+        document.getElementById('timer').innerHTML = tmp/10;
+        else
+            document.getElementById('timer').innerHTML = (tmp/10)+".0";
+    }    else {//si le timer est a 0 on change de joueur et met a jour le html
+        tmp=temps;
+        if(tmp%10!=0)
+        document.getElementById('timer').innerHTML = tmp/10;
+        else
+            document.getElementById('timer').innerHTML = (tmp/10)+".0";
+        joueurActif=(joueurActif+1)%2;
+        if(joueurActif==0)
+                document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
+            else 
+                document.getElementById("joueur").innerHTML="TOUR JOUEUR 2";
+
+
+        tmp=temps;
+        // clearInterval(compteur);
+    }
+	/*
+  if(actualprogress >maxprogress) 
+  {
+    clearInterval(itv);
+    return;
+  }	*/
+  var progressnum = document.getElementById("progressnum");
+  var indicator = document.getElementById("indicator");
+  actualprogress += 1;	
+  indicator.style.width=actualprogress + "px";
+  progressnum.innerHTML = actualprogress;
+  if(actualprogress == maxprogress) clearInterval(itv);   
 }

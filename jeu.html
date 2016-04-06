@@ -32,7 +32,18 @@
 				<!-- Indique quel joueur va jouer-->
 					<div id="joueur"></div>
 					<!--Timer du jeu-->
-					<div id="timer"></div>
+				<div id="pwidget">
+					<div id="progressbar" >
+						<div id="indicator"></div>
+					</div>
+					<div id="progressnum">0</div>
+				</div>
+				<input type="button" name="Submit" value="Lancer la progression"
+    onclick="itv = setInterval(prog, 100)" />
+<input type="button" name="Submit" value="Stopper"
+    onclick="clearInterval(itv)" />
+				
+					<!--<div id="timer"></div>-->
 
 						<!-- Tableau des cores-->
 						<div class="a"><h2>Score du joueur 1 </h2><div id="score1"></div></div>
