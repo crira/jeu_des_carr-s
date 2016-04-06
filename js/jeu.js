@@ -1,7 +1,7 @@
 window.onload  = function () {
     creerGrille();
     
-    compteur = setInterval('prog();',100);
+    compteur = setInterval('decompte();',100);
 }
 
 var largeurGrille  = 7; // largeur en nombre de gros carré (mettre un nombre impaire sinon on pourra avoir des égalités et on a pas envie)
