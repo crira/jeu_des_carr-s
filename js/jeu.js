@@ -202,7 +202,7 @@ function decompte(){// timer
 
 
 //barre de progression
-var maxprogress = 20;   // total à atteindre
+var maxprogress = 50;   // total à atteindre
 var actualprogress = 0;  // valeur courante
 var itv = 0;  // id pour setinterval
 function prog()

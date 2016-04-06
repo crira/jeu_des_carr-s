@@ -210,17 +210,13 @@ td {
 /*----------------------------------------------Progress Bar-------------------------------------*/
 #pwidget
 {
-  background-color:lightgray;
-  width:254px;
+  width:100%;
   padding:2px;
-  -moz-border-radius:3px;
-  border-radius:3px;
   text-align:left;
-  border:1px solid gray;	
 }
 #progressbar
 {
-  width:250px;
+  width:100%;
   padding:1px;
   background-color:white;
   border:1px solid black;
