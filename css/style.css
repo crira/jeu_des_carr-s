@@ -1,12 +1,17 @@
 /*----------------------------------------------CSS général-------------------------------------*/
-body,nav ul,h1,h2,#menu,footer p{
+body,nav ul,h1,h2,#menu,footer p,pre,cite{
 	margin:0;
 	padding:0;
+	font-family: verdana;
 }
 #menu{
 	display:block;
 	width:100%;
 	text-align:left;
+}
+pre{
+	color: #006699;
+	font-weight: bold;
 }
 
 a{text-decoration: none;}
@@ -14,7 +19,7 @@ a{text-decoration: none;}
 .clear{display:block;clear:both;}
 .clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
 
-#header, #container, #footer{display:block; width:1000px; margin:0 auto;}
+#header, #container, #footer,#container_jeu{display:block; width:1000px; margin:0 auto;}
 
 nav ul{list-style:none;}
 
@@ -47,13 +52,14 @@ h1, h2{font-size:20px;}
 }
 
 #header nav li a:hover{
-	color:cornflowerblue; 
+	color:#006699; 
 	background-color:#333;
 }
 
 .row1, .row1 a{color:#C0BAB6;background-color:#333333;}
 
 /*----------------------------------------------Section du bas-------------------------------------*/
+
 #container{
 	padding:30px 0;
 }
@@ -76,7 +82,7 @@ video{
 	display:block; 
 	float:right;  
 	color:#333;
-	line-height:1.8em;
+
 }
 #haut #texte a{
 	color:cornflowerblue;
@@ -100,20 +106,42 @@ footer{
 }
 
 /*----------------------------------------------Page Jeu-------------------------------------*/
-#jeu{
-	margin-left: 300px;
+
+.main{
+	width:auto;
+	height: auto;
+	float: left;
+	margin: 1%;
+
 }
-.a{
-	float:left;
+#joueur,#timer{
+	padding-bottom: 10px;
+	line-height: 2em;
+	font-weight: bold;
 }
-.b{
-	float:right;
+#joueur,#timer,.a,.b{text-align: center;}
+
+.a,.b{
+	background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
 }
 
+.a{	width: 25%;
+	float: left;
+	margin: 1%;
+	padding: 1%;}
+.b{	width: 25%;
+	float: left;
+	margin: 1%;
+	padding: 1%;}
+
 table{
-	float:left;
     background-color:#333;
     border-radius: 0.4em;
+	width: 100%;
+	margin: auto;
+
 }
 
 td {
@@ -122,12 +150,13 @@ td {
 }
 
 
+
 /* ---- Case tableau ---- */
 .gros{
 	border-radius:0.5em;
 	background-color: #fff;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 
 /* ---- Points ralliements ---- */
@@ -140,9 +169,9 @@ td {
 
 /* ---- Barres ---- */
 
-.largeur{height: 8px;}
+.largeur{height: 6px;}
 
-.hauteur{ width : 8px;}
+.hauteur{ width : 6px;}
 
 .hauteur,.largeur{border-radius: 0.2em;}
 
@@ -151,17 +180,24 @@ td {
 
 
 .bouton{
-	color:#fff;
-  	background-color: #428bca;
-	border: 1px solid transparent;
+	display: block;
+	margin : auto;
+    color:#666;
+    background:#ddd;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    transition: all .4s ease-in;
   	border-radius: 4px;
-	padding: 15px 15px;
+	padding:15px;
+	margin-bottom: 15px;
+	
 
 }
 
 .bouton:hover{
-	color: #333;
-  	background-color: #ebebeb;
+    color:#fff;
+    background:#006699;
 }
 
 .joueur1{background-color: #F00;}
