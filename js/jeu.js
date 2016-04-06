@@ -4,11 +4,8 @@ window.onload  = function () {
     compteur = setInterval('prog();',100);
 }
 
-<<<<<<< HEAD
-var largeurGrille  = 3; // largeur en nombre de gros carré (mettre un nombre impaire sinon on pourra avoir des égalités et on a pas envie)
-=======
 var largeurGrille  = 7; // largeur en nombre de gros carré (mettre un nombre impaire sinon on pourra avoir des égalités et on a pas envie)
->>>>>>> origin/master
+
 
 var joueurActif = 0; //retient le joueur actif
 var scoreJ1=0;
@@ -205,39 +202,16 @@ function decompte(){// timer
 
 
 //barre de progression
-var maxprogress = 250;   // total à atteindre
+var maxprogress = 20;   // total à atteindre
 var actualprogress = 0;  // valeur courante
 var itv = 0;  // id pour setinterval
 function prog()
 {
-	tmp --;
-	    if (tmp > 0) {// mise a jour du timer dans le html
-        if(tmp%10!=0)
-        document.getElementById('progressbar').innerHTML = tmp/10;
-        else
-            document.getElementById('progressbar').innerHTML = (tmp/10)+".0";
-    }    else {//si le timer est a 0 on change de joueur et met a jour le html
-        tmp=temps;
-        if(tmp%10!=0)
-        document.getElementById('progressbar').innerHTML = tmp/10;
-        else
-            document.getElementById('progressbar').innerHTML = (tmp/10)+".0";
-        joueurActif=(joueurActif+1)%2;
-        if(joueurActif==0)
-                document.getElementById("joueur").innerHTML="TOUR JOUEUR 1";
-            else 
-                document.getElementById("joueur").innerHTML="TOUR JOUEUR 2";
-
-
-        tmp=temps;
-        // clearInterval(compteur);
-    }
-	/*
   if(actualprogress >maxprogress) 
   {
     clearInterval(itv);
     return;
-  }	*/
+  }	
   var progressnum = document.getElementById("progressnum");
   var indicator = document.getElementById("indicator");
   actualprogress += 1;	
